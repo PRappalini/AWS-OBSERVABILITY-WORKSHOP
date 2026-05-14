@@ -1,0 +1,18 @@
+site_name: AWS OBSERVABILITY WORKSHOP
+site_description: A workshop to learn about AWS Observability services and best practices.
+site_author: Pablo
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Introduction to AWS Observability: "00-AWS Observability.md"
+  - Observability with Amazon CloudWatch: "00-Observability with Amazon Cloudwatch.md"
+  - What you'll learn: "01-LEARN.md"
+  - Application architecture: "02-Application architecture.md"
+  - Using the CloudFormation console: "03-CloudFormation_console.md"
+  - Workshop pre-requisites: "04-Workshop pre-requisites.md"
+  - Logs and Log Management: "05-Logs and Log Management.md"
+  - CloudWatch Logs and log groups: "06-CloudWatch Logs and log groups.md"
+  - Ingestion - data sources: "07-Ingestion-data_sources.md"
