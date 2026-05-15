@@ -147,9 +147,55 @@ Configure data source information through log processing pipelines when ingestin
 | Data sources | Organize and manage similar logs together |
 | Summary | Provides a birds-eye view of your log data and a way to jump start on policies and features |
 
-From the Data sources tab, you can define and manage data sources:
-Data Sources: CloudWatch Logs automatically consolidates your log data by data sources and types
-Unmapped Log Data: To map data source for unmapped logs, define the data source information in the tag keys on your log groups
+From the *Data sources* tab, you can define and manage data sources:
 
-Continuar aca
+- Data Sources: CloudWatch Logs automatically consolidates your log data by data sources and types
+- Unmapped Log Data: To map data source for unmapped logs, define the data source information in the tag keys on your log groups
 
+![cw-logs-data-sources-overview](./img/07-cw-logs-data-sources-overview.gif)
+
+## Using the AWS CLI
+
+To list distinct data sources and types of logs in your account:
+
+```sh
+aws logs list-aggregate-log-group-summaries --group-by DATA_SOURCE_NAME_AND_TYPE
+```
+Once data source is defined, you will be able to create pipelines, associate them with S3 tables integration, define indexes or facets, and query them together using data source as the query scope.
+
+## Configure data sources
+
+In this section, we will categorize custom application logs by mapping unmapped log data to a data source using log group tags.
+
+### Step-by-step instructions
+
+1) Go to the [CloudWatch Console](https://console.aws.amazon.com/cloudwatch/).
+2) In the navigation pane, under Logs, choose Log Management.
+3) Select the Data sources tab, then choose Unmapped log data.
+4) Locate and select the log group that contains name *Microservices-Microservice-petlistadoptionpyecsloggroupXXXXXX*
+5) Under Actions, click Map data source and provide the values:
+
+- Data source name: petlistadoptionpyecsloggroup
+- Data source type: python
+
+6) Confirm Map data source.
+
+*WARNING: The log group will continue to show up in the Unmapped data list until new data is ingested and processed.*
+
+7) Generate traffic to create new log data:
+
+- Navigate to the *CloudFormation* console
+- Locate the *Microservices-Microservice* stack and find the **PetSiteUrl** from Outputs tab
+- Open the PetSiteUrl in your browser
+- Perform a few operations in the Pet Adoptions application
+
+8) Return to **Log Management** → **Data Sources** tab.
+9) Verify that the log group now appears under **Data sources** with Category Custom:
+
+![cw-logs-data-sources-custom.png](./img/07-cw-logs-data-sources-custom.png)
+
+*WARNING: It may take a few minutes for the log group to appear in Data sources after mapping and ingesting new data.*
+
+## Summary
+
+In this module, you learned how CloudWatch data sources organize and categorize logs based on their origin. You explored how to enable resource discovery, access data sources through the Log Management console, and configure custom application logs by mapping unmapped log data using log group tags.
