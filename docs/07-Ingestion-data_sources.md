@@ -198,4 +198,4 @@ In this section, we will categorize custom application logs by mapping unmapped 
 
 ## Summary
 
-In this module, you learned how CloudWatch data sources organize and categorize logs based on their origin. You explored how to enable resource discovery, access data sources through the Log Management console, and configure custom application logs by mapping unmapped log data using log group tags.
+In this module, you learned how **CloudWatch** data sources organize and categorize logs based on their origin. You explored how to enable resource discovery, access data sources through the **Log Management** console, and configure custom application logs by mapping unmapped log data using log group tags.
