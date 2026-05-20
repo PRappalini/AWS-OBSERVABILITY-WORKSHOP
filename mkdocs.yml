@@ -22,13 +22,13 @@ theme:
 
 nav:
   - Home: index.md
-  - Introduction to AWS Observability: "00-AWS Observability.md"
-  - Observability with Amazon CloudWatch: "00-Observability with Amazon Cloudwatch.md"
-  - What you'll learn: "01-LEARN.md"
-  - Application architecture: "02-Application architecture.md"
-  - Using the CloudFormation console: "03-CloudFormation_console.md"
-  - Workshop pre-requisites: "04-Workshop pre-requisites.md"
-  - Logs and Log Management: "05-Logs and Log Management.md"
+  - Introduction to AWS Observability: "00-aws_observability.md"
+  - Observability with Amazon CloudWatch: "00-observability_with_amazon_cloudwatch.md"
+  - What you'll learn: "01-learn.md"
+  - Application architecture: "02-application architecture.md"
+  - Using the CloudFormation console: "03-cloudformation_console.md"
+  - Workshop pre-requisites: "04-workshop_pre-requisites.md"
+  - Logs and Log Management: "05-logs_and_log_management.md"
   - CloudWatch Logs and log groups: "06-cloudwatch_logs_and_log_groups.md"
   - Ingestion - data sources: "07-ingestion-data_sources.md"
   - Ingestion - enablement rules: "08-ingestion-enablement_rules.md"
