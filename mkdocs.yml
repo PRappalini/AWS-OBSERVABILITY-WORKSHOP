@@ -29,5 +29,8 @@ nav:
   - Using the CloudFormation console: "03-CloudFormation_console.md"
   - Workshop pre-requisites: "04-Workshop pre-requisites.md"
   - Logs and Log Management: "05-Logs and Log Management.md"
-  - CloudWatch Logs and log groups: "06-CloudWatch Logs and log groups.md"
-  - Ingestion - data sources: "07-Ingestion-data_sources.md"
+  - CloudWatch Logs and log groups: "06-cloudwatch_logs_and_log_groups.md"
+  - Ingestion - data sources: "07-ingestion-data_sources.md"
+  - Ingestion - enablement rules: "08-ingestion-enablement_rules.md"
+  - Ingestion - telemetry pipelines: "09-ingestion-telemetry_pipelines.md"
+
