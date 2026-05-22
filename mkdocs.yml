@@ -38,5 +38,5 @@ nav:
     - Logs Infrequent Access: "10-logs_infrequent_access.md"
     - Live Tail: "11-live_tail.md"
     - Transform and enrich CloudWatch Logs: "12-transform_and_enrich_cloudwatch_logs.md"
-  - Log Centralization:
+#  - Log Centralization:
 
