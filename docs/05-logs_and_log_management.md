@@ -1,7 +1,7 @@
 
 # Logs and Log Management
 
-## LOGS
+## Logs
 
 **Amazon CloudWatch Logs** enables you to centralize logs from all your systems, applications, and AWS services in a single, highly scalable service. You can view, search, filter, and archive logs for future analysis.
 
