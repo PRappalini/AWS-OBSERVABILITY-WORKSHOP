@@ -82,25 +82,14 @@ When event volume exceeds the display rate, Live Tail samples the events. The st
 
 For example, *100 events/s, 60% displayed* indicates that 167 filtered events were available, but only 100 (the maximum rate) were streamed to the console. Dropped log events are discarded from the Live Tail display only. They continue to be processed and saved to **CloudWatch Logs**.
 
+## Events window
 
+![livetaileventswindow](./img/13-livetaileventswindow.png)
 
+The Events Window displays streaming events and provides the following controls:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| **Action** | **Description** |
+| --- | --- |
+| **Pause** | Click anywhere in the Events Window to pause the stream |
+| **Resume** | Click **Resume session** (lower right corner) to display the latest events |
+| **Cancel** | Click **Cancel** to stop the tailing session |
