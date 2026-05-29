@@ -52,7 +52,9 @@ This page shows details about each AWS resource that has been discovered, includ
 To discover AWS resources and view their telemetry configuration status across your organization or account, click *Enable resource discovery*.
 
 1) Go to the [CloudWatch Console](https://console.aws.amazon.com/cloudwatch/).
+
 2) Select **Ingestion** from the left navigation pane.
+
 3) Click **Enable resource discovery**.
 
 ![07-cw-ingestion-enable-resource-discovery](./img/07-cw-ingestion-enable-resource-discovery.gif)
@@ -113,7 +115,9 @@ Supported **AWS** services include **Amazon VPC Flow Logs, AWS CloudTrail, AWS W
 Third-party logs require **CloudWatch** Pipelines for data source categorization:
 
 1) Configure a pipeline to ingest logs from supported third-party sources (Microsoft Office 365, Okta, CrowdStrike, Palo Alto Networks).
+
 2) Specify the data source name and type in the pipeline configuration.
+
 3) CloudWatch Logs automatically categorizes all logs processed by the pipeline.
 
 *Pipelines can optionally transform third-party logs into Open Cybersecurity Schema Framework (OCSF) format. When OCSF transformation is enabled, the data source name and type are automatically determined based on the OCSF schema mapping.*
@@ -138,7 +142,9 @@ Configure data source information through log processing pipelines when ingestin
 ## Accessing data sources
 
 1) Go to the [CloudWatch Console](https://console.aws.amazon.com/cloudwatch/).
+
 2) In the navigation pane, under **Logs**, choose **Log Management**.
+
 3) View your log data by log groups or data sources:
 
 | Tab | Description |
@@ -170,9 +176,13 @@ In this section, we will categorize custom application logs by mapping unmapped 
 ### Step-by-step instructions
 
 1) Go to the [CloudWatch Console](https://console.aws.amazon.com/cloudwatch/).
+
 2) In the navigation pane, under Logs, choose Log Management.
+
 3) Select the Data sources tab, then choose Unmapped log data.
+
 4) Locate and select the log group that contains name *Microservices-Microservice-petlistadoptionpyecsloggroupXXXXXX*
+
 5) Under Actions, click Map data source and provide the values:
 
 - Data source name: petlistadoptionpyecsloggroup
@@ -190,6 +200,7 @@ In this section, we will categorize custom application logs by mapping unmapped 
 - Perform a few operations in the Pet Adoptions application
 
 8) Return to **Log Management** → **Data Sources** tab.
+
 9) Verify that the log group now appears under **Data sources** with Category Custom:
 
 ![cw-logs-data-sources-custom.png](./img/07-cw-logs-data-sources-custom.png)

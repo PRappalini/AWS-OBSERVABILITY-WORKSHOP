@@ -57,9 +57,13 @@ Standard log groups are designed for logs that you access frequently and require
 ### Step-by-step instructions
 
 1) Open the [CloudWatch console](https://console.aws.amazon.com/cloudwatch/).
+
 2) In the navigation pane, choose Log Management → Log groups.
+
 3) Click **Create log group** and enter a name (e.g., */aws/petsite*).
+
 4) Optionally select an **AWS KMS key** for encryption at rest, or leave as default for AWS-managed encryption.
+
 5) Add **Tags** (optional but recommended) to organize and track costs.
 Review your configuration and click **Create**.
 
@@ -82,7 +86,9 @@ Review your configuration and click **Create**.
 You can view and scroll through log data on a stream-by-stream basis. You can also specify the time range for the log data to view.
 
 1) Open the [CloudWatch console](https://console.aws.amazon.com/cloudwatch/).
+
 2) In the navigation pane, choose **Log Management**.
+
 3) Navigate to the **Log groups** tab and choose the log group to view the streams. In this example, we are choosing */aws/eks/PetsiteEKS-cluster/cluster*
 
 ![loggroup](./img/06-loggroup.png)

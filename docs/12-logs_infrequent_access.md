@@ -25,7 +25,9 @@ Check the [list of features](https://docs.aws.amazon.com/AmazonCloudWatch/latest
 To explore Logs IA, we will create a CloudWatch Log Group with Infrequent Access as the log class.
 
 1) In the AWS Management Console, navigate to **CloudWatch**.
+
 2) Under **Logs**, select **Log Groups** and click **Create Log Group**.
+
 3) Provide a name for the log group (for example *petsite-infrequent*), leave the default **Retention setting** as *Never expire*, select **Infrequent Access** as the **Log class**, and click **Create**.
 
 ![10-infrequentaccesslogs](./img/10-infrequentaccesslogs.png)

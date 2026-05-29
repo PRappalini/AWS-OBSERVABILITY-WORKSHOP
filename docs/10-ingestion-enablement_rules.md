@@ -51,7 +51,9 @@ For the purpose of demo, ensure you have a **CloudTrail** trail configured with 
 ### Step-by-step instructions
 
 1) Go to the [CloudWatch Console](https://console.aws.amazon.com/cloudwatch/).
+
 2) In the navigation pane, choose **Ingestion** and select **Enablement rules**.
+
 3) Click Add rule and provide the following details:
 
 - Specify scope: -> Select **AWS CloudTrail** as data source and click **Configure telemetry** - Rule name: *CloudTrail-TurnOnLogging-demo* - Click **Next**
@@ -67,8 +69,11 @@ After the telemetry rule is configured, a log group will be created with the nam
 ### Inspect CloudTrail management events
 
 1) Go to the [CloudWatch Console](https://console.aws.amazon.com/cloudwatch/).
+
 2) In the navigation pane, choose **Logs** → **Log Management**.
+
 3) Filter and select the log group *aws/cloudtrail/managementevents*.
+
 4) Inspect the management events logging in that log group.
 
 ![08-managementevents.png](./img/08-managementevents.png)
@@ -78,7 +83,9 @@ After the telemetry rule is configured, a log group will be created with the nam
 ### Viewing rules
 
 1) Go to the [CloudWatch Console](https://console.aws.amazon.com/cloudwatch/).
+
 2) In the navigation pane, choose **Ingestion** and select **Enablement rules**.
+
 3) View all rules with details such as Data source, Telemetry type, and scope.
 
 ![08-enablementrules.png](./img/08-enablementrules.png)
@@ -86,8 +93,11 @@ After the telemetry rule is configured, a log group will be created with the nam
 ### Editing rules
 
 1) Go to the [CloudWatch Console](https://console.aws.amazon.com/cloudwatch/).
+
 2) In the navigation pane, choose **Ingestion** and select **Enablement rules**.
+
 3) Select the rule *CloudTrail-TurnOnLogging-demo* and click **Edit rule**.
+
 4) Skip to **Next** step (Telemetry config does not allow log group name modification for **CloudTrail**).
 
 ![08-telemetryconfig.png](./img/08-telemetryconfig.png)
@@ -109,7 +119,9 @@ Since we have enabled data events, a new log group will be created with the name
 ### Deleting rules
 
 1) Go to the [CloudWatch Console](https://console.aws.amazon.com/cloudwatch/).
+
 2) In the navigation pane, choose **Ingestion** and select **Enablement** rules.
+
 3) Select the rule you want to delete and click **Delete**.
 
 *WARNING: Deleting a rule does not remove telemetry configurations already applied to resources. It only prevents the rule from applying to new resources.*

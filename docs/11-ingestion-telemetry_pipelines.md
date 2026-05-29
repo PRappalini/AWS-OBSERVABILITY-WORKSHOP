@@ -43,7 +43,9 @@ Ensure you have **CloudTrail** logs enabled and sending to **CloudWatch Logs**. 
 ## Create pipeline
 
 1) Go to the [CloudWatch Console](https://console.aws.amazon.com/cloudwatch/).
+
 2) In the navigation pane, choose **Ingestion** and select **Pipelines**.
+
 3) Click **Create pipeline** with the following details:
 
 | **Step** | **Configuration** |
@@ -67,8 +69,11 @@ After creating pipelines, you can monitor their performance and manage their con
 ### Check pipeline status
 
 1) Go to the [CloudWatch Console](https://console.aws.amazon.com/cloudwatch/).
+
 2) In the navigation pane, choose **Ingestion** and select **Pipelines**.
+
 3) Locate the pipeline *demo-pipeline-cloudtrail*.
+
 4) Verify the **Processing status** and **Data throughput metrics**.
 
 ![09-cw-pipelines-overview](./img/09-cw-pipelines-overview.gif)
@@ -78,7 +83,9 @@ After creating pipelines, you can monitor their performance and manage their con
 Review comprehensive pipeline details including general settings, visualization, metrics, and configuration.
 
 1) Go to the [CloudWatch Console](https://console.aws.amazon.com/cloudwatch/).
+
 2) In the navigation pane, choose **Ingestion** and select **Pipelines**.
+
 3) Click on the pipeline *demo-pipeline-cloudtrail*.
 
 ![09-cw-pipeline-visualization](./img/09-cw-pipeline-visualization.png)
@@ -100,10 +107,15 @@ Based on the configuration above, the pipeline is now actively processing **Clou
 ## View transformed logs
 
 1) Go to the [CloudWatch Console](https://console.aws.amazon.com/cloudwatch/).
+
 2) In the navigation pane, choose **Logs → Log Management**.
+
 3) Filter and open the log group *aws/cloudtrail/managementevents*.
+
 4) Click **Search all log streams**.
+
 5) Adjust the time range to display recent events (e.g., last 5, 10, or 15 minutes).
+
 6) Examine the log events:
     - For OCSF-transformed logs, you should see structured JSON with OCSF fields
     - Look for fields like *class_name, category_name, severity, time, api, actor*, etc.
@@ -168,9 +180,13 @@ The original **CloudTrail** JSON format uses AWS-specific field names like *even
 ### View pipeline metrics
 
 1) Go to the [CloudWatch Console](https://console.aws.amazon.com/cloudwatch/).
+
 2) In the navigation pane, choose **Metrics → All metrics**.
+
 3) Select the **Observability Admin** namespace under AWS namespaces.
+
 4) Choose **PipelineName** dimension and select the *pipeline demo-pipeline-cloudtrail*.
+
 5) View available metrics.
 
 For more information, see [Monitoring Pipelines Using CloudWatch Metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Monitoring-Pipelines.html).
@@ -184,8 +200,11 @@ For more information, see [Create a CloudWatch alarm based on a static threshold
 ## Delete a pipeline
 
 1) Go to the [CloudWatch Console](https://console.aws.amazon.com/cloudwatch/).
+
 2) In the navigation pane, choose **Ingestion** and select **Pipelines**.
+
 3) Click on the pipeline *demo-pipeline-cloudtrail*.
+
 4) Click **Delete** and confirm deletion.
 
 *WARNING: Deleting a pipeline does not delete the logs that were already processed. It only stops future log processing.*

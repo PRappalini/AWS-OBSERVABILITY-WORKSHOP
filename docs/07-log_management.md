@@ -16,6 +16,7 @@ In this section you will:
 The **Log Management → Summary** tab gives you a single-pane view of log ingestion volume, active data sources, log group counts, and recent query activity.
 
 1) In the AWS Management Console, open **CloudWatch**
+
 2) In the left navigation under **Logs**, click **Log Management** — the **Summary** tab is shown by default
 
 ![logmanagement](./img/05-logmanagement.png)

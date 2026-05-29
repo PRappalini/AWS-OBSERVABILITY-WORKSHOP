@@ -49,6 +49,7 @@ When the Live Tail console starts, click the Filter icon to expand the filtering
 For this workshop, apply a filter to retrieve only logs from the *petsite* container:
 
 1) In the **Add filter patterns** field, enter the following pattern: *{ $.kubernetes.namespace_name = "petsite" }*
+
 2) Click **Apply filters** to start the tailing session.
 
 *Learn more about [filter pattern syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPatternSyntax.html#matching-terms-events)*
