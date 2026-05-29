@@ -19,7 +19,9 @@ You can access Live Tail directly from the CloudWatch console menu under the Log
 ### Start from a Log Group
 
 1) In the navigation pane, choose **Log Management** and navigate to the **Log groups** tab.
+
 2) Select the checkbox for the log group */aws/containerinsights/PetsiteEKS-cluster/application*.
+
 3) Click the **Start Tailing** button.
 
 ![loggroupswithstarttailingbutton](./img/13-loggroupswithstarttailingbutton.png)
@@ -68,7 +70,7 @@ Use the magnifier icon next to an event to open a detailed view where you can re
 
 ![livetaildetailsofaneventzoom](./img/13-livetaildetailsofaneventzoom.png)
 
-Highlight terms differ from filter patterns. Filters narrow down which events are displayed, while highlighted terms help identify specific content within the filtered results. For example, filter by severity *error* but highlight the specific error code *HTTP 504*.
+Highlight terms differ from filter patterns. Filters narrow down which events are displayed, while highlighted terms help identify specific content within https://aws.uruguru.online/13-live_tail/the filtered results. For example, filter by severity *error* but highlight the specific error code *HTTP 504*.
 
 ## Sampling behavior
 
