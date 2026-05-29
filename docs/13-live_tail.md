@@ -77,7 +77,7 @@ When event volume exceeds the display rate, Live Tail samples the events. The st
 - **events/s** –> The number of events streamed to the console
 - **% displayed** –> The percentage of filtered events shown
 
-
+For example, *100 events/s, 60% displayed* indicates that 167 filtered events were available, but only 100 (the maximum rate) were streamed to the console. Dropped log events are discarded from the Live Tail display only. They continue to be processed and saved to **CloudWatch Logs**.
 
 
 
